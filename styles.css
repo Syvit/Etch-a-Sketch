@@ -1,14 +1,13 @@
 .gridContainer{
-    width: 19em;
+    width: 30em;
+    height: 30em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
 }
 .gridBox {
-    color: black;
-    width: 1em;
-    height: 1em;
-    border: 1px solid black;
+    width: 1.75em;
+    height: auto;
+    border: 0.1em solid black;
     margin: 0;
 }
