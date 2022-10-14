@@ -1,13 +1,44 @@
-.gridContainer{
-    width: 30em;
-    height: 30em;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+html {
+    background-color: #222831;
 }
-.gridBox {
-    width: 1.75em;
-    height: auto;
-    border: 0.1em solid black;
+body {
     margin: 0;
 }
+
+.gridContainer{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    scale: 1.5;
+    margin-top:8em;
+}
+.gridCell {  
+    border: 0.1em solid black;
+}
+
+#gridCount {
+    padding: 1em 0em;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+button {
+    margin: 1em;
+    border: 0.1em solid #f0f0f0;
+    background-color: transparent;
+    color: #f1f1f1;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition: 0.1s;
+    }
+    
+button:hover{
+    transform: translateY(-0.1em);
+    box-shadow: 0em 0.3em 0em #a99fff;
+ }
