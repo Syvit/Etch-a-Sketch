@@ -12,8 +12,8 @@ function gridGen(gridNum, padSize){
             cell.className = 'gridCell';
             // cell.innerHTML = (i * gridNum) + x;
             row.appendChild(cell);         
-            row.onmouseover = function(e){
-                e.target.style.backgroundColor = 'black';
+            cell.onmouseover = function(e){
+                e.target.style.backgroundColor = 'var(--lnktxt)';
             }
             cell.style.padding =`${(padSize)}em`;
         }

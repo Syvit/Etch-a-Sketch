@@ -1,5 +1,16 @@
+:root {
+    --bg: #131a25;
+    --subbg: #141c29;
+    --header: #131a25e5;
+    --lnktxt: #D64550;
+    --lnktxthover:#a84951;
+    --pb: #dddddd36;
+    --pbmain: #ddddddc0;
+    --maintxt: #DDDDDD;
+    --subtxt: #DDDDDD;
+}
 html {
-    background-color: #222831;
+    background-color: var(--bg);
 }
 body {
     margin: 0;
@@ -15,7 +26,7 @@ body {
     margin-top:8em;
 }
 .gridCell {  
-    border: 0.1em solid black;
+    border: 0.05em solid var(--maintxt);
 }
 
 #gridCount {
@@ -30,15 +41,17 @@ body {
 
 button {
     margin: 1em;
-    border: 0.1em solid #f0f0f0;
+    border: 0.1em solid var(--maintxt);
     background-color: transparent;
-    color: #f1f1f1;
+    color: var(--maintxt);
     padding: 0.5em 1em;
-    border-radius: 0.5em;
+    border-radius: 0.5em 0 0.5em 0;
     transition: 0.1s;
+    padding: 1em 2em;
     }
     
 button:hover{
-    transform: translateY(-0.1em);
-    box-shadow: 0em 0.3em 0em #a99fff;
+    transform: translateY(-0.2em);
+    box-shadow: 0em 0.3em 0em var(--lnktxt);
  }
+
